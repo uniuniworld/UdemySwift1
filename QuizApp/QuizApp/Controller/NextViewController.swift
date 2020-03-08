@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol NowScoreDelegate {
+    
+    func nowScores(score:Int)
+    
+}
+
 class NextViewController: UIViewController {
 
     @IBOutlet weak var correctLabel: UILabel!
@@ -17,22 +23,34 @@ class NextViewController: UIViewController {
     var correctedCount = Int()
     var wrongCount = Int()
     
+    var delegate:NowScoreDelegate?
+    
+    var beforeCount = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         correctLabel.text = String(correctedCount)
         wrongLabel.text = String(wrongCount)
+        
+        if UserDefaults.standard.object(forKey: "beforeCount") != nil{
+            
+            beforeCount = UserDefaults.standard.object(forKey: "beforeCount") as! Int
+            
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func back(_ sender: Any) {
+        
+        //もし最高得点　入れ替え
+        if beforeCount < correctedCount{
+            UserDefaults.standard.set(correctedCount, forKey: "beforeCount")
+            delegate?.nowScores(score: correctedCount)
+        }else if beforeCount > correctedCount{
+            //最高得点ではない　入れ替えない
+            UserDefaults.standard.set(beforeCount, forKey: "beforeCount")
+        }
+        
+        dismiss(animated: true, completion: nil)
+        
     }
-    */
-
 }

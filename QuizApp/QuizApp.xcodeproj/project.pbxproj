@@ -17,6 +17,11 @@
 		3C6F2A6524136FF5002AA27E /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C6F2A6424136FF5002AA27E /* sound.mp3 */; };
 		3C6F2A6924137045002AA27E /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C6F2A6824137045002AA27E /* maruSound.mp3 */; };
 		3C6F2A6F241371D9002AA27E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2A6E241371D9002AA27E /* NextViewController.swift */; };
+		3C75883D24148643009BE79F /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75883C24148643009BE79F /* SoundFile.swift */; };
+		3C75883F24148A09009BE79F /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75883E24148A09009BE79F /* Animal.swift */; };
+		3C75884124148A36009BE79F /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75884024148A36009BE79F /* Human.swift */; };
+		3C75884324148BC9009BE79F /* WithOuntMP#.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75884224148BC9009BE79F /* WithOuntMP#.swift */; };
+		3C75884524148E09009BE79F /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75884424148E09009BE79F /* ChangeColor.swift */; };
 		3C9B8EFD24137A50006D3E95 /* imagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B8EFC24137A50006D3E95 /* imagesModel.swift */; };
 		3C9B8EFF24137BBC006D3E95 /* imagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B8EFE24137BBC006D3E95 /* imagesList.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,11 @@
 		3C6F2A6424136FF5002AA27E /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		3C6F2A6824137045002AA27E /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		3C6F2A6E241371D9002AA27E /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		3C75883C24148643009BE79F /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
+		3C75883E24148A09009BE79F /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		3C75884024148A36009BE79F /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		3C75884224148BC9009BE79F /* WithOuntMP#.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WithOuntMP#.swift"; sourceTree = "<group>"; };
+		3C75884424148E09009BE79F /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 		3C9B8EFC24137A50006D3E95 /* imagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesModel.swift; sourceTree = "<group>"; };
 		3C9B8EFE24137BBC006D3E95 /* imagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +95,11 @@
 			children = (
 				3C9B8EFC24137A50006D3E95 /* imagesModel.swift */,
 				3C9B8EFE24137BBC006D3E95 /* imagesList.swift */,
+				3C75883C24148643009BE79F /* SoundFile.swift */,
+				3C75883E24148A09009BE79F /* Animal.swift */,
+				3C75884024148A36009BE79F /* Human.swift */,
+				3C75884224148BC9009BE79F /* WithOuntMP#.swift */,
+				3C75884424148E09009BE79F /* ChangeColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C75884324148BC9009BE79F /* WithOuntMP#.swift in Sources */,
+				3C75884524148E09009BE79F /* ChangeColor.swift in Sources */,
 				3C6F2A5124136E65002AA27E /* ViewController.swift in Sources */,
+				3C75883F24148A09009BE79F /* Animal.swift in Sources */,
+				3C75883D24148643009BE79F /* SoundFile.swift in Sources */,
 				3C6F2A6F241371D9002AA27E /* NextViewController.swift in Sources */,
+				3C75884124148A36009BE79F /* Human.swift in Sources */,
 				3C6F2A4D24136E65002AA27E /* AppDelegate.swift in Sources */,
 				3C6F2A4F24136E65002AA27E /* SceneDelegate.swift in Sources */,
 				3C9B8EFD24137A50006D3E95 /* imagesModel.swift in Sources */,
