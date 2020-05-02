@@ -1,0 +1,7 @@
+  pod 'Firebase/Auth'  
+  pod 'FacebookSDK'
+  pod 'Firebase/Core'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'SDWebImage/WebP'
